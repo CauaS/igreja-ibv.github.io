@@ -8,26 +8,31 @@
     grid-row-start:2;
     grid-row-end: 4;
    
-    width: var(--width-each-article-main)
+    width: 13dvw;
 }
 
 @media (375px <= width <= 768px) {
   .article-left {
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 6;
   
     grid-row-start:2;
-    width: var(--width-each-article-main-mobile-devices);
+
+    width: 40dvw;
     line-height: 2rem;
     padding-left: 3rem;
   }
 }
 
 .article-left span {
+  position: relative;
+
   font-family: 'Barlow';
   color: white;
-  position: relative;
-  font-size: clamp(1rem, 7vw, 3rem);
+  font-size: clamp(calc(1rem - .5rem), 7vw, 3rem);
+
+  word-break: normal;
+  text-align: center;
 }
 
 .article-left span::before {
