@@ -16,7 +16,7 @@
 body {
     height: 100dvh;
 
-    background-image: url("./assets/bg.jpg");
+    background-image: url("./assets/bg.webp");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
