@@ -1,0 +1,27 @@
+
+nav > a {
+   color: #5E5B5B;
+   text-decoration: none;
+   position: relative;
+
+   font-size: clamp(.8rem, 4vw, 1rem);
+}
+
+nav > a::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--orange-theme-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+nav > a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}

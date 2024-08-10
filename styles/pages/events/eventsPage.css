@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Roboto:wght@100&display=swap');
+
+span {
+    font-family: 'Barlow'
+}
+
+.events-pagecontainer-grid {
+    display: grid;
+    height: 100dvh;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.events-container-grid {
+    display: inherit;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.culto-do-amigo-event {
+    grid-column-start: 2;
+}
+
+.ensino-da-palavra-event {
+    grid-column-start: 3;
+}
+
+.culto-dos-jovens-event {
+    grid-column-start: 4;
+}
+
+.culto-do-domingo-event {
+    grid-column-start: 5;
+}
+
+.retiro-de-jovens-event {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.santa-ceia-event {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+@media (375px <= width <= 768px){
+    .events-container-grid {
+        display: grid;
+
+        grid-template-columns: repeat(2, 60%);
+        grid-template-rows: repeat(3, 45%);
+
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
+    .culto-do-amigo-event {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    
+     .ensino-da-palavra-event {
+        grid-column-start: 2;
+    }
+    
+    .culto-dos-jovens-event {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    
+    .culto-do-domingo-event {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    
+    .retiro-de-jovens-event {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    
+    .santa-ceia-event {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+}
+
+.event > span {
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-color: var(--orange-theme-color);
+
+    color:aliceblue;
+    font-size: clamp(.001rem, 15vw, 1rem);
+}
+
+.event > .square-hour-area {
+    height: clamp(1rem, 15vw, 10rem);
+    width: clamp(8rem, 15vw, 13rem);
+    border: 1px solid aliceblue;
+
+    margin-top: .7rem;
+
+    /* Positon relative because of hour and underline */
+    position: relative;
+}
+
+.event > .square-hour-area > .event-hour {
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+    padding: .5rem;
+
+    color: aliceblue;
+
+   font-size: clamp(.1rem, 15vw, .9rem);
+}
+
+.event > .square-hour-area::before {
+   content: "";
+   display: block;
+   background-color: var(--orange-theme-color);
+
+   width: clamp(1rem, 15vw, 10rem);
+   height: 1px;
+
+
+   position: absolute;
+   bottom:-10px;
+}
+

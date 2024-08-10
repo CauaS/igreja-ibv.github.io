@@ -1,0 +1,12 @@
+:root {
+    --bottom-navigation-left-nav: 20rem;
+    --left-navigation-nav: -11rem;
+
+    --left-navigation-nav-mobile: -3.875rem;
+
+    --max-width: 100vw;
+    --orange-theme-color: #dd772e;
+    --width-each-article-main: calc(var(--max-width)/8);
+
+    --width-each-article-main-mobile-devices: calc(var(--max-width)/2.8);
+}
