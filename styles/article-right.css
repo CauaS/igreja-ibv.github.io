@@ -10,6 +10,8 @@
 
 @media (375px <= width <= 768px) {
   .article-right {
+    display: inherit;
+    justify-content: center;
     grid-column-start: 3;
     grid-column-end: 4;
   

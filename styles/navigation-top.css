@@ -11,8 +11,12 @@
 
 @media (375px <= width <= 840px) {
     .nav-section-top {
-      grid-column-start: 2;
-      grid-column-end: 4;
+      padding: 4rem 1rem 1rem 1rem;
+      grid-column-start: 3;
+    }
+
+    .nav-section-top > nav {
+      gap: 1.9rem;
     }
   }
 

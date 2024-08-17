@@ -19,8 +19,10 @@
     grid-row-start:2;
 
     width: 40dvw;
+
     line-height: 2rem;
     padding-left: 3rem;
+    margin: 0 15%;
   }
 }
 
