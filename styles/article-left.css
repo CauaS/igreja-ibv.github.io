@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Roboto:wght@100&display=swap');
 
 .article-left {
-    grid-column-start: 2;
     grid-column-end: 4;
 
     grid-row-start:2;
