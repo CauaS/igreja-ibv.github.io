@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Roboto:wght@100&display=swap');
 
 .article-right {
+  display: inherit;
+
+  /* To center both buttons */
+  justify-self: center;
+  align-self: first baseline;
+
   grid-column-start: 5;
   grid-column-end: 6;
 
@@ -11,7 +17,10 @@
 @media (375px <= width <= 768px) {
   .article-right {
     display: inherit;
-    justify-content: center;
+
+    /* To center both buttons */
+    place-items: center;
+
     grid-column-start: 3;
     grid-column-end: 4;
   

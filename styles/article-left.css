@@ -1,21 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Roboto:wght@100&display=swap');
 
 .article-left {
-    grid-column-end: 4;
+  grid-column-end: 4;
 
-    grid-row-start:2;
-    grid-row-end: 4;
-   
-    width: 13dvw;
+  grid-row-start: 2;
+  grid-row-end: 4;
+
+  width: 13dvw;
 }
 
-@media (375px <= width <= 768px) {
+@media (375px <=width <=768px) {
   .article-left {
     grid-column-start: 3;
     grid-column-end: 6;
-  
-    grid-row-start:2;
+
+    grid-row-start: 2;
 
     width: 40dvw;
 
@@ -30,7 +29,7 @@
 
   font-family: 'Barlow';
   color: white;
-  font-size: clamp(calc(1rem - .5rem), 7vw, 3rem);
+  font-size: clamp(calc(1rem - .5rem), 7vw, 2.7rem);
 
   word-break: normal;
   text-align: center;
@@ -48,7 +47,7 @@
   z-index: -1;
 }
 
-.article-left > .underline-text {
+.article-left>.underline-text {
   text-decoration: underline;
   text-underline-offset: .8rem;
   text-decoration-color: var(--orange-theme-color);
