@@ -43,8 +43,8 @@ h1, span {
 
 /* Versiculo Style  */
 .versiculo {
-    grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 7;
 
     grid-row-start: 2;
 }
@@ -73,13 +73,13 @@ h1, span {
     font-style: italic;
 
     color: aliceblue;
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1rem, 0.7472rem + 1.0786vw, 1.4375rem);
 }
 
 /* Content IBV Style  */
 .about-container-grid > .content-about-ibv {
-    grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 7;
 
     grid-row-start: 3;
 }
@@ -95,8 +95,18 @@ h1, span {
         gap: 0
     }
 
+    .versiculo {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
     .about-container-grid > .title-container {
         grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    .about-container-grid > .content-about-ibv {
+        grid-column-start: 2;
         grid-column-end: 6;
     }
 
