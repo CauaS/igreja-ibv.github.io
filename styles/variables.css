@@ -6,6 +6,7 @@
 
     --max-width: 100vw;
     --orange-theme-color: #dd772e;
+    --orange-theme-secondary-color: #e49258;
     --width-each-article-main: calc(var(--max-width)/8);
 
     --width-each-article-main-mobile-devices: calc(var(--max-width)/2.8);

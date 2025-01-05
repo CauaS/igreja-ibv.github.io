@@ -14,7 +14,7 @@
         <div class="container-grid">
             <section class="nav-section-top">
                 <nav>
-                    <a href=".pages/about/about.html">Home</a>
+                    <a href="./index.html">Home</a>
                     <a href="./pages/about/about.html">Sobre</a>
                     <a href="./pages/events/events.html">Eventos</a>
                     <a href="./about/about.html">Contatos</a>
@@ -45,7 +45,7 @@
                 </span>
             </article>
             <article class="article-right">
-                <button class="button-blur-action">
+                <button class="button-blur-action" onclick="onAllEventsClicked()">
                     <span>Todos eventos</span>
                 </button>
                 <button class="button-blur-action">
@@ -54,5 +54,13 @@
             </article>
         
         </div>
+        <script>
+            function onAllEventsClicked(){
+                window.open(
+                    'pages/allEvents/allEvents.html',
+                    '_blank',
+                )
+            }
+        </script>
     </body>
 </html>

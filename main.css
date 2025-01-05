@@ -6,6 +6,7 @@
 @import "./styles/variables.css";
 @import "./styles/pages/events/eventsPage.css";
 @import "./styles/pages/about/aboutPage.css";
+@import "./styles/pages/allEvents/allEvents.css";
 
 * {
     box-sizing: border-box;
