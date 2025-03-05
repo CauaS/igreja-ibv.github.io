@@ -1,5 +1,4 @@
 "hosting": {
-  // ... other hosting settings
   "github": {
     "repo": "CauaS/igreja-ibv.github.io",
     "branch": "main"
