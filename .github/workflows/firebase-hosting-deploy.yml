@@ -19,10 +19,7 @@ jobs:
       - name: Install Firebase CLI globally
         run: npm install -g firebase-tools
 
-      - name: Authentificate with Firebase
+      - name: Authenticate and Deploy with Firebase
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }} # Define token a env variable
         run: firebase deploy --only hosting --token $FIREBASE_TOKEN
-      
-      - name: Deploy to Firebaae Hosting
-        run: firebase deploy --only hosting
