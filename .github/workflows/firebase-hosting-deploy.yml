@@ -22,4 +22,4 @@ jobs:
       - name: Authenticate and Deploy with Firebase
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }} # Define token a env variable
-        run: firebase deploy --only hosting --token $FIREBASE_TOKEN
+        run: firebase deploy --only hosting --project igrejaviverbemibv --token $FIREBASE_TOKEN
