@@ -26,15 +26,15 @@ jobs:
         run: cp main.css public/
         
       - name: Copy assets folder to public folder
-        run: cp -r assets/* public/
+        run: cp -r assets public/
 
       - name: Copy pages folder to public folder
-        run: cp -r pages/* public/
+        run: cp -r pages public/
 
       - name: Copy styles folder to public folder
-        run: cp -r styles/* public/
+        run: cp -r styles public/
 
       - name: Authenticate and Deploy with Firebase
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }} # Define token a env variable
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: firebase deploy --only hosting --project igrejaviverbemibv --token $FIREBASE_TOKEN
