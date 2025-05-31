@@ -9,16 +9,21 @@
     gap: 2.5rem
 }
 
-@media (375px <= width <= 840px) {
-    .nav-section-top {
-      padding: 4rem 1rem 1rem 1rem;
-      grid-column-start: 3;
-    }
-
-    .nav-section-top > nav {
-      gap: 1.9rem;
-    }
+@media (max-width: 840px) {
+  .nav-section-top {
+    grid-column: 1 / -1;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
   }
+
+  .nav-section-top > nav {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 
 /* Estou selecionando todos, a partir do 1 elemento */
 /* 2n + 1 Seleciona a cada 2 elementos 1*/
