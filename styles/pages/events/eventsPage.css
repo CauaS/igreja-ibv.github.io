@@ -63,8 +63,8 @@ span {
         grid-template-columns: repeat(2, 55%);
         grid-template-rows: repeat(3, 45%);
 
-        grid-column-start: 3;
-        grid-column-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 6;
 
         row-gap: 0;
     }
