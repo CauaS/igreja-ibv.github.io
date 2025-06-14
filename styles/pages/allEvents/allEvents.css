@@ -43,6 +43,14 @@
     margin-bottom: 1rem;
 }
 
+.events-container-area > div {
+    background: rgba(0, 0, 0, 0.5);
+    border-left: 3px solid var(--orange-theme-color);
+    border-radius: 8px;
+    min-height: max-content;
+    margin-bottom: 1rem;
+}
+
 /* 
     All Events squares
 */
