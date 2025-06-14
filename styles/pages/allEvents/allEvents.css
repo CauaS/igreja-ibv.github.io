@@ -21,7 +21,7 @@
     width: 100%;
     min-height: max-content;
 
-    grid-template-rows: 20% 40% 40%;
+    grid-template-rows: 50% 50%;
     grid-template-columns: 46% 46% 46% 46%;
 
     grid-column-start: 2;
@@ -48,7 +48,7 @@
 */
 .events-container-area .event-gc {
     display: inherit;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-column-start: 1;
     
     height: 100%;
@@ -58,21 +58,21 @@
     display: inherit;
 
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 1;
     
     height: 100%;
 }
 
 .events-container-area .event-bastismo {
     display: inherit;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-column-start: 1;
     
     height: 100%; 
 }
 .events-container-area .event-acoes-sociais {
     display: inherit;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-column-start: 2;
     
     height: 100%; 
@@ -80,7 +80,7 @@
 
 .events-container-area .event-culto-amigo {
     display: inherit;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-column-start: 3;
     
     height: 100%; 
@@ -88,7 +88,7 @@
 
 .events-container-area .event-santa-ceia {
     display: inherit;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-column-start: 3;
     
     height: 100%; 
@@ -96,7 +96,7 @@
 
 .events-container-area .event-culto-mulheres {
     display: inherit;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-column-start: 4;
     
     height: 100%; 
@@ -104,7 +104,7 @@
 
 .events-container-area .event-encontro-teen {
     display: inherit;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-column-start: 4;
     
     height: 100%; 
@@ -204,7 +204,7 @@
         margin-left: 5%;
         grid-column-start: 2;
 
-        grid-template-rows: 10% 100%;
+        grid-template-rows: 100%;
         grid-template-columns: 85% 85% 85% 85% 85% 85% 85% 90%;
 
         gap: 1.5rem;
@@ -218,47 +218,47 @@
     Fixing events when mobile layout 
     */
     .events-container-area .event-gc {
-        grid-row-start: 2;
+        grid-row-start: 1;
         grid-column-start: 1;
         height: 86%;
     }
 
      .events-container-area .event-palestra {
-         grid-row-start: 2;
+         grid-row-start: 1;
          grid-column-start: 2;
          height: 86%;
      }
 
      .events-container-area .event-bastismo {
-        grid-row-start: 2;
+        grid-row-start: 1;
         grid-column-start: 3;
         height: 86%;
     }
     .events-container-area .event-acoes-sociais {
-        grid-row-start: 2;
+        grid-row-start: 1;
         grid-column-start: 4;
         height: 86%;
     }
     .events-container-area .event-culto-amigo {
-        grid-row-start: 2;
+        grid-row-start: 1;
         grid-column-start: 5;
         
         height: 86%; 
     }
     .events-container-area .event-santa-ceia {
-        grid-row-start: 2;
+        grid-row-start: 1;
         grid-column-start: 6;
         
         height: 86%; 
     }
     .events-container-area .event-culto-mulheres {
-        grid-row-start: 2;
+        grid-row-start: 1;
         grid-column-start: 7;
         
         height: 86%; 
     }
     .events-container-area .event-encontro-teen {
-        grid-row-start: 2;
+        grid-row-start: 1;
         grid-column-start: 8;
         
         height: 86%; 
@@ -269,5 +269,17 @@
     */
     .event-border::before {
         height: 97%;
+    }
+
+    .event-locations {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        gap: .5rem;
+    }
+    .event-locations div {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
     }
 }
