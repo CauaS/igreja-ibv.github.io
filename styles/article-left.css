@@ -3,17 +3,48 @@
 .article-left {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
   width: 13dvw;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
+}
+.article-ibv-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+    .article-ibv-icon {
+        width: 100%;
+        height: 100%;
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .article-ibv-icon > picture {
+        width: 100%;
+        height: auto;
+        max-width: 8rem;
+        max-height: 8rem;
+    }
+  .article-left {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+=======
 }
 
 @media (max-width: 768px) {
   .article-left {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
+>>>>>>> main
     width: 100%;
     margin: 0 auto;
     padding: 1rem;
