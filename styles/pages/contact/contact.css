@@ -142,18 +142,28 @@
     @media (max-width: 768px) {
         .container {
             width: 100dvw;
-            background-color: red;
+        }
+        #contato {
+            padding: 5rem 1.5rem;
         }
 
         .card {
-            width: 57%;
+            width: 100%;
         }
 
         .map-placeholder {
-            width: 57%;
+            width:100%;
         }
 
         .envie-sua-mensagem {
-            width: 57%;
+            width:100%;
+        }
+        /* Thast the right way I believe */
+        .grid-cols-2 {
+            grid-template-columns: repeat(1,85%);
+        }
+          .grid {
+            display: grid;
+            gap: 1rem;
         }
     }
