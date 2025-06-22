@@ -25,6 +25,7 @@
 
     .container {
         max-width: 100dvw;
+        max-height: 100dvh;
         margin: 0 auto;
     }
 
@@ -163,8 +164,9 @@
         .grid-cols-2 {
             grid-template-columns: repeat(1,98%);
         }
-          .grid {
+        .grid {
             display: grid;
             gap: 1rem;
+            text-align: center;
         }
     }
