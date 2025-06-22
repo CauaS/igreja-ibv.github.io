@@ -3,7 +3,7 @@
     bottom: var(--bottom-navigation-left-nav);
     left: var(--left-navigation-nav);
     transform: rotate(-90deg);
-    grid-column-start:1;
+
 }
 
 .group-description-nav-left {
@@ -27,11 +27,25 @@
 
 @media (375px <= width <= 768px){
     .nav-section-left {
-        grid-column-start:2;
+        transform: rotate(0deg);
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
     }
             
     .group-description-nav-left > picture {
         display: none;
+    }
+
+    .follow-us {
+        display: none;
+    }
+
+    .nav-section-left > .group-description-nav-left > nav {
+       display: flex;
+       flex-direction: row;
+       padding: 0;
+       
     }
 }
 
