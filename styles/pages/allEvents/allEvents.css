@@ -22,7 +22,7 @@
     min-height: max-content;
 
     grid-template-rows: 50% 50%;
-    grid-template-columns: 46% 46% 46% 46%;
+    grid-template-columns: 31% 31% 31% 31%;
 
     grid-column-start: 2;
     grid-column-end: 6;
@@ -36,11 +36,14 @@
 }
 
 .events-container-area > div {
-    background: rgba(0, 0, 0, 0.5);
-    border-left: 3px solid var(--orange-theme-color);
-    border-radius: 8px;
-    min-height: max-content;
-    margin-bottom: 1rem;
+     background-color: #2a2a2a; /* Dark background matching your image */
+    border-left: 5px solid #ff8c00; /* Orange accent */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Slightly rounded corners */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .events-container-area > div {
@@ -219,10 +222,13 @@
         gap: 1.5rem;
 
         span {
-            font-size: 1.1rem;
+            font-size: .8rem;
         }
     }
-    
+    .card-footer {
+        flex-direction: column;
+        gap: .5rem;
+    }
     /*
     Fixing events when mobile layout 
     */
@@ -291,4 +297,69 @@
         gap: .5rem;
         align-items: center;
     }
+}
+
+.card {
+    background-color: #2a2a2a; /* Dark background matching your image */
+    border-left: 5px solid #ff8c00; /* Orange accent */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Slightly rounded corners */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.card-time {
+    color: #ff8c00; /* Orange for the time */
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card-title {
+    color: #ffffff; /* White for the title */
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    color: #bbbbbb; /* Light gray for description */
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; /* Pushes the footer to the bottom if content varies in height */
+}
+
+.card-location,
+.card-details {
+    display: flex;
+    align-items: center;
+    color: #dddddd; /* Light gray for details */
+    font-size: 0.8em;
+}
+
+.card-icon {
+    background-color: #ff8c00; /* Orange background for icon */
+    color: #ffffff; /* White icon */
+    padding: 4px;
+    border-radius: 50%; /* Circular icon background */
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 0.7em; /* Adjust icon size if using text, or replace with actual SVG/font icon */
+}
+.event-location-each {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
